@@ -1,0 +1,13 @@
+
+<form action="/" method="post">  
+	<textarea name="content" ></textarea>  
+	<input type="submit" value=" Update! ">  
+</form>  
+
+
+<% @status.each do |status| %>  
+	<article <
+		<p><%= status.content %></p>  
+		<p class="meta">Created: <%= status.created_at %></p>  
+	</article>  
+<% end %>  
